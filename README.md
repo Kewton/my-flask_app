@@ -107,3 +107,17 @@
     ```py
     pytest tests
     ```
+
+# container
+- build
+```
+docker build -t flask-app:v0.0.1 . --no-cache
+```
+- run
+```
+docker run -p 8080:8080 flask-app:v0.0.1
+```
+- test
+```
+curl http://127.0.0.1:8080 
+```
